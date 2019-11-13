@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<p id="test"></p>
+	<script>	
+		var food = 100;
+	var timeCount = function(){
+		var time = new Date();
+		while(food > 0){
+			document.getElementById("test").innerHTML = time.toLocaleTimeString() + "\n"+food;
+			time = time.getTime() - 5;
+			food-=20;
+			setTimeout(timeCount, 5000);
+		}
+		document.getElementById("test").innerHTML = time.toLocaleTimeString() + "\n"+food;
+		alert('Game Over!');
+
+	}
+	timeCount();
+	</script>
+</body>
+</html>
