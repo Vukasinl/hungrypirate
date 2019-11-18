@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $pwd = "";
-$db = "gameprojekat";
+$db = "hungrypirate";
 
 $conn = mysqli_connect($host, $user, $pwd, $db);
 
